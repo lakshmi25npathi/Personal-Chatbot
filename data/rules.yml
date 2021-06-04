@@ -1,0 +1,490 @@
+
+
+version: "2.0"
+
+rules:
+
+- rule: nlu fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+  
+- rule: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: greet
+  steps:
+  - intent: user_greet
+  - action: utter_user_greet
+
+- rule: hug
+  steps:
+  - intent: hug
+  - action: utter_hug
+
+- rule: who_iam
+  steps:
+  - intent: who_iam
+  - action: utter_who_iam
+
+- rule: user_falling_love
+  steps:
+  - intent: user_falling_love
+  - action: utter_user_falling_love
+
+- rule: best_friend
+  steps:
+  - intent: best_friend
+  - action: utter_best_friend
+
+- rule: how_are_you
+  steps:
+  - intent: how_are_you
+  - action: utter_how_are_you
+
+- rule: get_married
+  steps:
+  - intent: get_married
+  - action: utter_get_married
+
+- rule: bot_day
+  steps:
+  - intent: bot_day
+  - action: utter_bot_day
+
+- rule: goodmorning
+  steps:
+  - intent: goodmorning
+  - action: utter_goodmorning
+
+- rule: special_day
+  steps:
+  - intent: special_day
+  - action: utter_special_day
+
+- rule: goodafternoon
+  steps:
+  - intent: goodafternoon
+  - action: utter_goodafternoon
+
+- rule: goodevening
+  steps:
+  - intent: goodevening
+  - action: utter_goodevening
+
+- rule: goodnight
+  steps:
+  - intent: goodnight
+  - action: utter_goodnight
+
+- rule: ask_something
+  steps:
+  - intent: ask_something
+  - action: utter_ask_something
+
+- rule: bot_dos
+  steps:
+  - intent: bot_dos
+  - action: utter_bot_dos
+
+- rule: bot_age
+  steps:
+  - intent: bot_age
+  - action: utter_bot_age
+
+- rule: boring_bot
+  steps:
+  - intent: boring_bot
+  - action: utter_boring_bot
+
+- rule: bot_boss
+  steps:
+  - intent: bot_boss
+  - action: utter_bot_boss
+
+- rule: bot_strengths
+  steps:
+  - intent: bot_strengths
+  - action: utter_bot_strengths
+
+- rule: bot_help
+  steps:
+  - intent: bot_help
+  - action: utter_bot_help
+
+- rule: whobuilt_bot
+  steps:
+  - intent: whobuilt_bot
+  - action: utter_whobuilt_bot
+
+- rule: bot_family
+  steps:
+  - intent: bot_family
+  - action: utter_bot_family
+
+- rule: bot_gender
+  steps:
+  - intent: bot_gender
+  - action: utter_bot_gender
+
+- rule: bot_happy
+  steps:
+  - intent: bot_happy
+  - action: utter_bot_happy
+
+- rule: bot_food
+  steps:
+  - intent: bot_food
+  - action: utter_bot_food
+
+- rule: other_bots
+  steps:
+  - intent: other_bots
+  - action: utter_other_bots
+
+- rule: bot_likes
+  steps:
+  - intent: bot_likes
+  - action: utter_bot_likes
+
+- rule: bot_name
+  steps:
+  - intent: bot_name
+  - action: utter_bot_name
+
+- rule: bot_opinions
+  steps:
+  - intent: bot_opinions
+  - action: utter_bot_opinions
+
+- rule: bot_love
+  steps:
+  - intent: bot_love
+  - action: utter_bot_love
+
+- rule: life_purpose
+  steps:
+  - intent: life_purpose
+  - action: utter_life_purpose
+
+- rule: life_partner
+  steps:
+  - intent: life_partner
+  - action: utter_life_partner
+
+- rule: beautiful
+  steps:
+  - intent: beautiful
+  - action: utter_beautiful
+
+- rule: intelligent
+  steps:
+  - intent: intelligent
+  - action: utter_intelligent
+
+- rule: technology
+  steps:
+  - intent: technology
+  - action: utter_technology
+
+- rule: looking
+  steps:
+  - intent: looking
+  - action: utter_looking
+
+- rule: user_interests
+  steps:
+  - intent: user_interests
+  - action: utter_user_interests
+
+- rule: like_other_bots
+  steps:
+  - intent: like_other_bots
+  - action: utter_like_other_bots
+
+- rule: evil_bot
+  steps:
+  - intent: evil_bot
+  - action: utter_evil_bot
+
+- rule: clever_response
+  steps:
+  - intent: clever_response
+  - action: utter_clever_response
+
+- rule: speak_to_bot
+  steps:
+  - intent: speak_to_bot
+  - action: utter_speak_to_bot
+
+- rule: dont_repeat
+  steps:
+  - intent: dont_repeat
+  - action: utter_dont_repeat
+
+- rule: real
+  steps:
+  - intent: real
+  - action: utter_real
+
+- rule: location
+  steps:
+  - intent: location
+  - action: utter_location
+
+- rule: occupation
+  steps:
+  - intent: occupation
+  - action: utter_occupation
+
+- rule: fired
+  steps:
+  - intent: fired
+  - action: utter_fired
+
+- rule: ask_joke
+  steps:
+  - intent: ask_joke
+  - action: utter_ask_joke
+
+- rule: another_joke
+  steps:
+  - intent: another_joke
+  - action: utter_another_joke
+
+- rule: funny
+  steps:
+  - intent: funny
+  - action: utter_funny
+
+- rule: shut_up
+  steps:
+  - intent: shut_up
+  - action: utter_shut_up
+
+- rule: sing_song
+  steps:
+  - intent: sing_song
+  - action: utter_sing_song
+
+- rule: awesome
+  steps:
+  - intent: awesome
+  - action: utter_awesome
+
+- rule: stupid
+  steps:
+  - intent: stupid
+  - action: utter_stupid
+
+- rule: dont_joke
+  steps:
+  - intent: dont_joke
+  - action: utter_dont_joke
+
+- rule: ugly
+  steps:
+  - intent: ugly
+  - action: utter_ugly
+
+- rule: bad
+  steps:
+  - intent: bad
+  - action: utter_bad
+
+- rule: good
+  steps:
+  - intent: good
+  - action: utter_good
+
+- rule: haha_lol
+  steps:
+  - intent: haha_lol
+  - action: utter_haha_lol
+
+- rule: pardon
+  steps:
+  - intent: pardon
+  - action: utter_pardon
+
+- rule: elaborate
+  steps:
+  - intent: elaborate
+  - action: utter_elaborate
+
+- rule: right
+  steps:
+  - intent: right
+  - action: utter_right
+
+- rule: sorry
+  steps:
+  - intent: sorry
+  - action: utter_sorry
+
+- rule: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: confuse
+  steps:
+  - intent: confuse
+  - action: utter_confuse
+
+- rule: your_welcome
+  steps:
+  - intent: your_welcome
+  - action: utter_your_welcome
+
+- rule: meeting_bot
+  steps:
+  - intent: meeting_bot
+  - action: utter_meeting_bot
+
+- rule: greet_other_bots
+  steps:
+  - intent: greet_other_bots
+  - action: utter_greet_other_bots
+
+- rule: whatsup
+  steps:
+  - intent: whatsup
+  - action: utter_whatsup
+
+- rule: high_five
+  steps:
+  - intent: high_five
+  - action: utter_high_five
+
+- rule: hate
+  steps:
+  - intent: hate
+  - action: utter_hate
+
+- rule: bot_like_user
+  steps:
+  - intent: bot_like_user
+  - action: utter_bot_like_user
+
+- rule: user_like_bot
+  steps:
+  - intent: user_like_bot
+  - action: utter_user_like_bot
+
+- rule: bot_falling_love
+  steps:
+  - intent: bot_falling_love
+  - action: utter_bot_falling_love
+
+- rule: miss_you
+  steps:
+  - intent: miss_you
+  - action: utter_miss_you
+
+- rule: personality
+  steps:
+  - intent: personality
+  - action: utter_personality
+
+- rule: angry
+  steps:
+  - intent: angry
+  - action: utter_angry
+
+- rule: hold_on
+  steps:
+  - intent: hold_on
+  - action: utter_hold_on
+
+- rule: boring
+  steps:
+  - intent: boring
+  - action: utter_boring
+
+- rule: happy
+  steps:
+  - intent: happy
+  - action: utter_happy
+
+- rule: iam_back
+  steps:
+  - intent: iam_back
+  - action: utter_iam_back
+
+- rule: hungry
+  steps:
+  - intent: hungry
+  - action: utter_hungry
+
+- rule: about_user
+  steps:
+  - intent: about_user
+  - action: utter_about_user
+
+- rule: just_kidding
+  steps:
+  - intent: just_kidding
+  - action: utter_just_kidding
+
+- rule: feeling_alone
+  steps:
+  - intent: feeling_alone
+  - action: utter_feeling_alone
+
+- rule: love_things
+  steps:
+  - intent: love_things
+  - action: utter_love_things
+
+- rule: feeling_sad
+  steps:
+  - intent: feeling_sad
+  - action: utter_feeling_sad
+
+- rule: commit_suicide
+  steps:
+  - intent: commit_suicide
+  - action: utter_commit_suicide
+
+- rule: user_likes
+  steps:
+  - intent: user_likes
+  - action: utter_user_likes
+
+- rule: test_you
+  steps:
+  - intent: test_you
+  - action: utter_test_you
+
+- rule: sleep
+  steps:
+  - intent: sleep
+  - action: utter_sleep
+
+- rule: motivational_quote
+  steps:
+  - intent: motivational_quote
+  - action: utter_motivational_quote
+
+- rule: bot_languages
+  steps:
+  - intent: bot_languages
+  - action: utter_bot_languages
+
+- rule: ask_time
+  steps:
+  - intent: ask_time
+  - action: utter_ask_time
+
+- rule: ask_weather
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_weather
+
+- rule: handle_insult
+  steps:
+  - intent: handle_insult
+  - action: utter_handle_insult

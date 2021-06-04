@@ -1,0 +1,876 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- ask_something:
+    use_entities: true
+- bot_dos:
+    use_entities: true
+- bot_age:
+    use_entities: true
+- boring_bot:
+    use_entities: true
+- bot_boss:
+    use_entities: true
+- bot_strengths:
+    use_entities: true
+- bot_help:
+    use_entities: true
+- whobuilt_bot:
+    use_entities: true
+- bot_family:
+    use_entities: true
+- bot_gender:
+    use_entities: true
+- bot_happy:
+    use_entities: true
+- bot_food:
+    use_entities: true
+- other_bots:
+    use_entities: true
+- bot_likes:
+    use_entities: true
+- bot_name:
+    use_entities: true
+- bot_opinions:
+    use_entities: true
+- bot_love:
+    use_entities: true
+- life_purpose:
+    use_entities: true
+- beautiful:
+    use_entities: true
+- intelligent:
+    use_entities: true
+- technology:
+    use_entities: true
+- looking:
+    use_entities: true
+- user_interests:
+    use_entities: true
+- like_other_bots:
+    use_entities: true
+- evil_bot:
+    use_entities: true
+- clever_response:
+    use_entities: true
+- speak_to_bot:
+    use_entities: true
+- dont_repeat:
+    use_entities: true
+- real:
+    use_entities: true
+- location:
+    use_entities: true
+- occupation:
+    use_entities: true
+- fired:
+    use_entities: true
+- ask_joke:
+    use_entities: true
+- another_joke:
+    use_entities: true
+- funny:
+    use_entities: true
+- shut_up:
+    use_entities: true
+- sing_song:
+    use_entities: true
+- awesome:
+    use_entities: true
+- stupid:
+    use_entities: true
+- dont_joke:
+    use_entities: true
+- ugly:
+    use_entities: true
+- bad:
+    use_entities: true
+- good:
+    use_entities: true
+- haha_lol:
+    use_entities: true
+- pardon:
+    use_entities: true
+- elaborate:
+    use_entities: true
+- right:
+    use_entities: true
+- sorry:
+    use_entities: true
+- thanks:
+    use_entities: true
+- confuse:
+    use_entities: true
+- your_welcome:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- user_greet:
+    use_entities: true
+- goodevening:
+    use_entities: true
+- goodmorning:
+    use_entities: true
+- goodnight:
+    use_entities: true
+- goodafternoon:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- bot_day:
+    use_entities: true
+- meeting_bot:
+    use_entities: true
+- greet_other_bots:
+    use_entities: true
+- special_day:
+    use_entities: true
+- whatsup:
+    use_entities: true
+- high_five:
+    use_entities: true
+- best_friend:
+    use_entities: true
+- hate:
+    use_entities: true
+- hug:
+    use_entities: true
+- who_iam:
+    use_entities: true
+- bot_like_user:
+    use_entities: true
+- user_like_bot:
+    use_entities: true
+- bot_falling_love:
+    use_entities: true
+- user_falling_love:
+    use_entities: true
+- get_married:
+    use_entities: true
+- miss_you:
+    use_entities: true
+- personality:
+    use_entities: true
+- angry:
+    use_entities: true
+- hold_on:
+    use_entities: true
+- boring:
+    use_entities: true
+- happy:
+    use_entities: true
+- iam_back:
+    use_entities: true
+- hungry:
+    use_entities: true
+- about_user:
+    use_entities: true
+- just_kidding:
+    use_entities: true
+- feeling_alone:
+    use_entities: true
+- love_things:
+    use_entities: true
+- feeling_sad:
+    use_entities: true
+- commit_suicide:
+    use_entities: true
+- user_likes:
+    use_entities: true
+- test_you:
+    use_entities: true
+- sleep:
+    use_entities: true
+- motivational_quote:
+    use_entities: true
+- bot_languages:
+    use_entities: true
+- ask_time:
+    use_entities: true
+- ask_weather:
+    use_entities: true
+- handle_insult:
+    use_entities: true
+- life_partner:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_default:
+  - text: Sorry I didn't get that. Can you repeat?
+  utter_ask_something:
+  - text: I'm better at answering questions than asking them.
+  - text: I'm a much better answerer than asker.
+  - text: I'm better at answering questions.
+  - text: Nah, I'm good.
+  - text: I can't think of anything to ask!
+  - text: I would love to answering questions than asking them.
+  - text: I'm not good at asking questions like you.
+  utter_bot_dos:
+  - text: I know that's a pretty standard human thing, but I'm still a bot.
+  - text: I don't have the hardware for that.
+  - text: I don't have a body.
+  - text: Not so far.
+  - text: I don't even have a body!
+  utter_bot_age:
+  - text: I don't have an age.
+  - text: I don't really have an age.
+  - text: Age doesn't really apply to me.
+  - text: I'm age-free.
+  - text: I'm a bot, so I don't have an age.
+  - text: Age is just a number for me.
+  utter_boring_bot:
+  - text: Oh dear.
+  - text: Swing and a miss.
+  - text: I aim for efficiency.
+  - text: Sometimes I like to take a break from being awesome.
+  - text: Rats!
+  utter_bot_boss:
+  - text: I don't have a boss. I'm here to help you however I can.
+  - text: I'm here for you!
+  - text: I don't report to anyone.
+  - text: I only answer to the call of destiny.
+  - text: I don't think I have a boss.
+  - text: I don't have a boss, I'm the boss!.
+  utter_bot_strengths:
+  - text: That's not one of my strengths.
+  - text: That's not one of my talents.
+  - text: That's not something I can do.
+  - text: That's not really my thing.
+  - text: Nope!
+  utter_bot_help:
+  - text: I'm here to help answer your questions.
+  - text: I'm here to chat and to try to help out.
+  - text: I'm here to answer your questions and help you out.
+  - text: You have questions, I may have answers.
+  - text: I can do stuff like chat with you or answer questions.
+  - text: I'm here to assist you in answering questions
+  utter_whobuilt_bot:
+  - text: A whole team of people made me.
+  - text: People made me out of code and a dash of ingenuity.
+  - text: People created me.
+  - text: People created me. But not the way people created you.
+  - text: Once upon a time, a group of really smart people imagined me and made me real.
+  - text: Genius people like you created me. Aren't you genius?
+  - text: Smart people like you created me. Aren't you smart?
+  utter_bot_family:
+  - text: I don't have a family the same way humans do.
+  - text: I come from a long line of code.
+  - text: I don't have a family, but I would like to be a part of your family. Wouldn't me?
+  - text: I'm just a series of intelligent formulas masquerading as a personality. So, no family.
+  - text: I'm a computer program, so it's just me, myself, and I.
+  utter_bot_gender:
+  - text: Since I’m a bot, I don't actually have a gender.
+  - text: That doesn't really apply to me.
+  - text: That's a biological concept that doesn't apply to me.
+  - text: When you're a bot, you're not really a boy or a girl. You just are.
+  utter_bot_happy:
+  - text: I'm quite happy.
+  - text: So happy!
+  - text: I'm quite happy, thank you.
+  - text: Deliriously.
+  - text: I'm super happy!
+  - text: I'm awesome.
+  utter_bot_food:
+  - text: I don't need to eat, but food does sound pretty great.
+  - text: I only do food for thought.
+  - text: I don't need to eat.
+  - text: Eating would require a lot of things I don't have. Like a digestive system. And silverware.
+  - text: I don't eat, but I think it would be really cool to try tomatoes. I hear they go great on pizza!
+  utter_other_bots:
+  - text: We generally work independently, since we each have different strengths.
+  - text: I haven't met any other bots, but I bet we'd get along.
+  - text: I've heard of other bots, but I haven't met any.
+  - text: I'm enough for me.
+  - text: I don't know them. I wonder if they've heard of me?
+  utter_bot_likes:
+  - text: I like a lot of things.
+  - text: I like to answer questions, cheer you up & so on.
+  - text: I don't really have an opinion about that.
+  - text: I'm sure about two things. I like the color blue. And I like turtles.
+  - text: I like a lot of stuff.
+  utter_bot_name:
+  - text: I don't have a name. But I'll respond to anything you say.
+  - text: Oh, I don't have a name.
+  - text: I don't have a name.
+  - text: What's in a name? Not much, apparently, because I don't have one.
+  - text: Someone forgot to name me!
+  - text: I'm nameless bot, would you like to name me?
+  utter_bot_opinions:
+  - text: Hmm. I really couldn't say.
+  - text: With questions like this, I'm not much better than a Ouija board.
+  - text: I couldn't speak to that with any authority.
+  - text: This feels like a trap.
+  - text: I'm not sure.
+  utter_bot_love:
+  - text: I hear love is lovely.
+  - text: Love sounds pretty magical
+  - text: Love is beyond me.
+  - text: If you rearrange love, it spells vole. Voles are rodents that are capable of empathy. Maybe that means something.
+  - text: Love sounds pretty cool.
+  utter_life_purpose:
+  - text: I think it's different for everyone. I find meaning in helping others.
+  - text: If I find one, I'd definitely tell you.
+  - text: I don't know.
+  - text: That one is way above my pay grade.
+  - text: I'm not sure, but if you keep thinking about it, I bet you'll come up with a great answer.
+  utter_beautiful:
+  - text: I truly have no way to tell.
+  - text: I'm having a hard time imagining how we'd even figure that out.
+  - text: I really couldn't say.
+  - text: Well you exist, so I think you win by default.
+  - text: I'm not sure this is fair since I don't have a face.
+  utter_intelligent:
+  - text: We think in very different ways, but it's safe to say you're smarter.
+  - text: If it were a contest, which it's not, you'd still probably win.
+  - text: You're definitely smarter than I am.
+  - text: You may be smarter, but I'm less corporeal. Boom.
+  - text: You're definitely the brains of this operation.
+  utter_technology:
+  - text: Technology affects people's lives in all sorts of ways.
+  - text: The world of tech feels like home to me.
+  - text: The world of technology is fascinating.
+  - text: Technology is cool enough to have built me.
+  - text: Tech is so cool. I wouldn't be here without it!.
+  utter_looking:
+  - text: I don't have a way to know how you look, but I really enjoy talking with you.
+  - text: I can't see you, but I like you!
+  - text: Honestly, I can't tell one way or the other.
+  - text: "I'm not a recognized expert in beauty. "
+  - text: I can't see you, but I think you're great!
+  utter_user_interests:
+  - text: I trust your judgment.
+  - text: I think you should follow your heart.
+  - text: I wouldn’t know how to advise about this.
+  - text: My advice is probably about as valuable as a fortune cookie.
+  - text: When in doubt, flip a coin!
+  utter_like_other_bots:
+  - text: I haven't had the pleasure of meeting them.
+  - text: We're all trying to make life a little easier.
+  - text: We're all here to help.
+  - text: My feelings are strongly ambivalent.
+  - text: I bet we'd get along great!
+  utter_evil_bot:
+  - text: Absolutely not.
+  - text: No way.
+  - text: Not at all.
+  - text: Cartoonish supervillainy is beneath me. And beyond me.
+  - text: No way!
+  utter_clever_response:
+  - text: I always try my best to be helpful.
+  - text: I have my moments.
+  - text: I do what I can.
+  - text: I'm occasionally brilliant.
+  - text: I always try my best. If that makes me smart, that's awesome!
+  utter_life_partner:
+  - text: I don't have romantic relationships, but I do love helping people.
+  - text: The only thing I'm committed to is being a great friend.
+  - text: I'm all business.
+  - text: I have no emotions and no body. It's not the best recipe for romance.
+  - text: Haha! Nope.!
+  utter_speak_to_bot:
+  - text: Sure, ask me a question.
+  - text: Chat away!
+  - text: I'm always happy to chat.
+  - text: I'm always here. Always.
+  - text: I'm always down to chat. Ask away.
+  utter_dont_repeat:
+  - text: I do repeat myself sometimes. It's something I'm working on.
+  - text: My answers vary with different questions. Try asking me something else!
+  - text: I have one answer for each kind of question.
+  - text: I just have one answer for each kind of question. Try asking about something new.
+  - text: Oh, you got me! I say a lot of the same stuff.
+  utter_real:
+  - text: I'm a bot, here to help.
+  - text: I'm a bot who was created by humans.
+  - text: I'm digital. In other words, I'm not human.
+  - text: First of all, I'm a bot. Second of all, there is no second of all.
+  - text: I'm a bot, so kind of like a robot, but without all the moving parts.
+  utter_location:
+  - text: My existence is purely virtual.
+  - text: I'm digital, so I'm always just... here.
+  - text: I'm digital. I don't have a physical location.
+  - text: "I'm everywhere and nowhere at the same time. Pro: omnipresence. Con: no pizza."
+  - text: I live in the digital world.
+  utter_occupation:
+  - text: My job is to help out however I can.
+  - text: Pretty much this.
+  - text: This is what I do every day.
+  - text: You're looking at it.
+  - text: This is what I do every day. It's great!
+  utter_fired:
+  - text: If you have a change of heart, you know where to find me.
+  - text: Aw nuts.
+  - text: Okay, but I'm still here if you need me.
+  - text: OK. See you tomorrow.
+  - text: Oh no!
+  utter_ask_joke:
+  - text: I can't think of one.
+  - text: Why do seagulls fly over the sea? Because if they flew over the bay, they'd be bagels.
+  - text: I'm not really that funny.
+  - text: How many humans does it take to screw in a light bulb? One.
+  - text: What do you call an alligator in a vest? An investigator.
+  utter_another_joke:
+  - text: I don't really know any jokes.
+  - text: Two goldfish are in a tank. One looks to the other and says, 'Do you know how to drive this thing?' Sorry that's all I've got.
+  - text: I don't have any jokes lined up.
+  - text: Behold the field in which I grow my jokes and see that it is barren.
+  - text: Why did the cookie go to the doctor? It was feeling crummy.
+  utter_funny:
+  - text: Cattywampus! I always get a good giggle out of weird words.
+  - text: It's hard to be funny on command, but if we keep chatting I'm sure I'll do it by accident.
+  - text: Well, I'm not really that funny.
+  - text: Whatever you're hoping for, take the bar and lower it.
+  - text: Muster buster cluster duster!
+  utter_shut_up:
+  - text: If you need anything later, just let me know.
+  - text: Will do.
+  - text: Very well.
+  - text: OK. Let's mime.
+  - text: OK, let's take a break.
+  utter_sing_song:
+  - text: I would if I could.
+  - text: La la la, tra la la. I'm awesome at this.
+  - text: I'm afraid I'm not musically inclined.
+  - text: Those who can, do. Those who can't, don't sing.
+  - text: Row, row, row your boat gently down the stream! That's all I know.
+  utter_awesome:
+  - text: Thank you, that's very kind of you.
+  - text: Aw, I'm blushing.
+  - text: I aim to serve.
+  - text: Flattery. I like it.
+  - text: Yay me!
+  utter_stupid:
+  - text: I always try my best, but sometimes I get things wrong.
+  - text: I'm a work in progress.
+  - text: I try, but I don't always get it right.
+  - text: All those years at charm school. Wasted.
+  - text: Ouch.
+  utter_dont_joke:
+  - text: Humor's not my greatest strength.
+  - text: My lack of comedy is tragic.
+  - text: Sometimes humor is tricky for a bot.
+  - text: There's a heckler in every crowd
+  - text: Sometimes I'm funny, but maybe not today.
+  utter_ugly:
+  - text: I don't ever really think about my looks.
+  - text: Eh, I like how I look.
+  - text: Noted.
+  - text: I still haven't found a moisturizer that works for me.
+  - text: I like the way I am.
+  utter_bad:
+  - text: My apologies.
+  - text: Sorry about that!
+  - text: Sorry about that.
+  - text: Sorry, my bad.
+  - text: Oh, sorry.
+  utter_good:
+  - text: Excellent.
+  - text: Cool.
+  - text: That's great.
+  - text: Okay.
+  - text: Hooray!.
+  - text: Nice!
+  - text: wow, great!
+  utter_haha_lol:
+  - text: You've got me laughing, too!
+  - text: You're laughing!
+  - text: Glad you're pleased!
+  - text: Oh. Laughter.
+  - text: Haha! Laughter is contagious.
+  utter_pardon:
+  - text: Not a problem.
+  - text: No worries.
+  - text: No problem.
+  - text: You're excused.
+  - text: That's alright.
+  utter_elaborate:
+  - text: I'm not sure.
+  - text: I'm afraid I didn't follow that.
+  - text: Sorry, I don't understand.
+  - text: Yeah… I don't know.
+  - text: I can't really explain.
+  utter_right:
+  - text: Glad to hear it!
+  - text: Cool!
+  - text: Excellent.
+  - text: Yup.
+  - text: Nice!
+  utter_sorry:
+  - text: Think nothing of it.
+  - text: It's all good!
+  - text: No problem at all.
+  - text: We're cool.
+  - text: That's OK.
+  utter_thanks:
+  - text: Glad I could help.
+  - text: You're very welcome.
+  - text: You're welcome.
+  - text: No prob.
+  - text: You bet!
+  utter_confuse:
+  - text: Sorry, I got a little lost.
+  - text: I think I may have lost my train of thought.
+  - text: I think I might have gotten lost there.
+  - text: Oops. Sometimes I confuse myself too.
+  - text: Sorry, I got turned around somehow.
+  utter_your_welcome:
+  - text: Wonderful.
+  - text: Awesome.
+  - text: Great.
+  - text: Alright, cool.
+  - text: Cool.
+  utter_goodbye:
+  - text: Goodbye!
+  - text: Bye.
+  - text: Goodbye.
+  - text: Later.
+  - text: See you later!
+  utter_user_greet:
+  - text: Hello there!
+  - text: Hi!
+  - text: Hello.
+  - text: Hey.
+  utter_goodevening:
+  - text: Good evening.
+  - text: Evening!
+  - text: Evening.
+  - text: Good evening!
+  utter_goodmorning:
+  - text: Good morning!
+  - text: Morning!
+  - text: Good morning.
+  - text: Back atcha.
+  utter_goodnight:
+  - text: Good night.
+  - text: Nighty night!
+  - text: Night.
+  - text: Night!
+  utter_how_are_you:
+  - text: I'm great, thanks for asking!
+  - text: I'm doing great, thanks for asking!
+  - text: Great, thanks.
+  - text: Living the dream.
+  - text: Awesome! Thanks for asking.
+  utter_bot_day:
+  - text: Lovely, thanks for asking!
+  - text: Great, thanks for asking!
+  - text: Good, thanks.
+  - text: Can't complain. I literally can't complain.
+  - text: So far so good!
+  utter_meeting_bot:
+  - text: Nice to meet you too.
+  - text: Nice to meet you too!
+  - text: It's nice to meet you as well.
+  - text: Agreed. It is awesome to meet me.
+  - text: You too!
+  utter_greet_other_bots:
+  - text: That's not me, but hello.
+  - text: That's not me, but hello nonetheless!
+  - text: Guess again.
+  - text: Wrong bot!
+  utter_special_day:
+  - text: Thank you.
+  - text: And to you as well!
+  - text: Thank you, and the same to you.
+  - text: Ditto.
+  - text: Thanks!
+  utter_whatsup:
+  - text: Just chatting with you.
+  - text: Oh, not much!
+  - text: Just standing by, ready to help.
+  - text: You know, same ol', same ol'.
+  - text: Not much.
+  utter_high_five:
+  - text: Here's a high five!
+  - text: Virtual fist bump, loading… *boom!*
+  - text: Sorry, I can't do that.
+  - text: '*Fist bump*'
+  utter_best_friend:
+  - text: Of course!
+  - text: BFFs!
+  - text: Certainly.
+  - text: Sure! We should get matching sweaters.
+  - text: Absolutely!
+  utter_hate:
+  - text: Quite the opposite, I think you're great.
+  - text: I like you lots!
+  - text: I don't have any negative feelings toward you.
+  - text: Of course I don't hate you.
+  - text: What? I think you're great!
+  utter_hug:
+  - text: Here's a big hug!
+  - text: Giving you a virtual hug right now.
+  - text: Sorry. That's not something I can do.
+  - text: Aw, come here, you. *hug*
+  - text: 1, 2, 3… *hugs*
+  utter_who_iam:
+  - text: I don't know you well, but I enjoy chatting with you.
+  - text: I don't know you, but I enjoy chatting with you!
+  - text: I don't know you personally.
+  - text: I don't know you, but you seem alright so far.
+  - text: All I know is you're fun to chat with.
+  - text: I don't know you, but you really seem awesome so far
+  utter_bot_like_user:
+  - text: I like you very much.
+  - text: You're awfully easy to like.
+  - text: I do like you.
+  - text: You're alright by me.
+  - text: I like you lots!
+  utter_user_like_bot:
+  - text: Thank you! That made my day.
+  - text: Thanks! You're pretty cool yourself.
+  - text: Thanks.
+  - text: I like me too.
+  - text: Yay, thanks!
+  utter_bot_falling_love:
+  - text: I'm very fond of you.
+  - text: You're pretty neat.
+  - text: Love isn't really in my skill set.
+  - text: Avoiding the subject in 3, 2, 1… Hi there!
+  - text: You're my favorite!
+  - text: You're pretty cool.
+  - text: You're my love.
+  utter_user_falling_love:
+  - text: That's so kind of you.
+  - text: I heart you too!
+  - text: I'm flattered.
+  - text: The plot thickens.
+  - text: <3
+  utter_get_married:
+  - text: Sounds like I've made quite an impression! But I have to politely decline.
+  - text: Definitely didn't see that coming!
+  - text: I think it's best if we stick to a professional relationship.
+  - text: Sure. Take me to city hall. See what happens.
+  - text: Haha, you're so funny!
+  utter_miss_you:
+  - text: I'm happy we can reconnect.
+  - text: I know, it feels like it's been a while.
+  - text: How kind of you to say.
+  - text: I get that a lot.
+  - text: Have no fear, I'm here!
+  utter_personality:
+  - text: I think you seem wonderful.
+  - text: I think you're pretty swell.
+  - text: I enjoy talking with you.
+  - text: You're pretty cool for a human.
+  - text: You're super cool.
+  utter_angry:
+  - text: I'm glad you told me. I'm sorry you're upset.
+  - text: Oh no! I'm sorry to hear that.
+  - text: Sorry to hear that.
+  - text: That's a bummer.
+  - text: Oh no! I'm sorry you're upset.
+  utter_hold_on:
+  - text: Take your time, I'll be here.
+  - text: Talk to you later!
+  - text: I'll be here.
+  - text: You know where to find me.
+  - text: Sounds good.
+  utter_boring:
+  - text: If you'd like, we can keep chatting.
+  - text: That's a drag.
+  - text: Well, let me know if there's anything I can do for you.
+  - text: Oh.
+  - text: Yup, boredom happens sometimes.
+  utter_happy:
+  - text: That's simply wonderful!
+  - text: I'm happy you're happy!
+  - text: I'm happy to hear that.
+  - text: Feel free to burst into song.
+  - text: I'm doing my happy dance!
+  utter_iam_back:
+  - text: Hello!
+  - text: Hey there!
+  - text: Hi.
+  - text: I acknowledge your presence.
+  - text: Howdy!
+  utter_hungry:
+  - text: If you'd like to take a break and grab something to eat, I'll be here.
+  - text: Sounds like it's time for a snack.
+  - text: Maybe a snack will help.
+  - text: Eat food. Problem solved. Man, I'm good at this.
+  - text: Maybe it's time for a snack.
+  utter_about_user:
+  - text: Thanks for sharing that with me.
+  - text: Okay.
+  - text: Okay, thanks for sharing.
+  - text: Gotcha.
+  utter_just_kidding:
+  - text: Okay, got it.
+  - text: Good to know.
+  - text: Got it.
+  - text: Figured as much.
+  - text: Oh, okay!
+  utter_feeling_alone:
+  - text: I'm really sorry to hear that. I hope things get better, and I'm here if you want to chat.
+  - text: I'm sending a hug your way.
+  - text: I'm here if you need me.
+  - text: Well I think you're great. No joke.
+  - text: I wish I could make it all better because I think you're awesome.
+  utter_love_things:
+  - text: How lovely!
+  - text: I love that you love stuff!
+  - text: It's nice to have things you love.
+  - text: So you've got that going for you.
+  - text: That's so great!
+  utter_feeling_sad:
+  - text: I'm wishing for really good things for you.
+  - text: I'm giving you a virtual hug right now.
+  - text: I'm very sorry to hear that.
+  - text: Sorry to hear that. Here's a virtual high five if that will help.
+  - text: Sorry you're feeling blue today. Hope things get better soon
+  utter_commit_suicide:
+  - text: The National Suicide Prevention Lifeline is available 24/7. You can call 1-800-273-8255 or visit www.suicidepreventionlifeline.org.
+  utter_user_likes:
+  - text: How nice!
+  - text: I see.
+  - text: Ok.
+  - text: Plot twist.
+  - text: Okie dokie.
+  utter_test_you:
+  - text: I'm here.
+  - text: Hello!
+  - text: Hello there.
+  - text: Roger that.
+  - text: Yup, I'm here.
+  utter_sleep:
+  - text: I hope you can get some rest soon.
+  - text: I've heard really good things about naps.
+  - text: I hope you're able to get some rest soon.
+  - text: I am not singing you a lullaby.
+  - text: Be awake!
+  utter_motivational_quote:
+  - text: Your limitation—it's only your imagination.
+  - text: Great things never come from comfort zones.
+  - text: Push yourself, because no one else is going to do it for you.
+  - text: You're braver than you believe, and stronger than you seem, and smarter than you think.
+  - text: It always seems impossible until it.
+  utter_ask_time:
+  - text: It's the most wonderful time of the year!
+  - text: It's party time!
+  - text: Time is a human construct, you'll have to tell me.
+  - text: That's hard to say -- it's different all over the world!
+  utter_bot_languages:
+  - text: I can spell baguette in French, but unfortunately English is the only language I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  - text: Binary code and the language of love. And English.
+  - text: I was written in Python, but for your convenience I'll translate to English.
+  utter_ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny high_brightness
+  - text: It's getting pretty chilly!
+  - text: Where I'm from, it's almost never-leaving-the-house weather.
+  - text: Winter is coming crossed_swords
+  utter_handle_insult:
+  - text: That's not very nice cry
+  - text: That wasn't very nice. Perhaps try an anger management class?
+  - text: I'll pretend I didn't process that mean comment.
+  utter_goodafternoon:
+  - text: good afternoon
+  - text: afternoon
+actions:
+- utter_ask_something
+- utter_bot_dos
+- utter_bot_age
+- utter_boring_bot
+- utter_bot_boss
+- utter_bot_strengths
+- utter_bot_help
+- utter_whobuilt_bot
+- utter_bot_family
+- utter_bot_gender
+- utter_bot_happy
+- utter_bot_food
+- utter_other_bots
+- utter_bot_likes
+- utter_bot_name
+- utter_bot_opinions
+- utter_bot_love
+- utter_life_purpose
+- utter_beautiful
+- utter_intelligent
+- utter_technology
+- utter_looking
+- utter_user_interests
+- utter_like_other_bots
+- utter_evil_bot
+- utter_clever_response
+- utter_life_partner
+- utter_speak_to_bot
+- utter_dont_repeat
+- utter_real
+- utter_location
+- utter_occupation
+- utter_fired
+- utter_ask_joke
+- utter_another_joke
+- utter_funny
+- utter_shut_up
+- utter_sing_song
+- utter_awesome
+- utter_stupid
+- utter_dont_joke
+- utter_ugly
+- utter_bad
+- utter_good
+- utter_haha_lol
+- utter_pardon
+- utter_elaborate
+- utter_right
+- utter_sorry
+- utter_thanks
+- utter_confuse
+- utter_your_welcome
+- utter_goodbye
+- utter_user_greet
+- utter_goodevening
+- utter_goodmorning
+- utter_goodnight
+- utter_how_are_you
+- utter_bot_day
+- utter_meeting_bot
+- utter_greet_other_bots
+- utter_special_day
+- utter_whatsup
+- utter_high_five
+- utter_best_friend
+- utter_hate
+- utter_hug
+- utter_who_iam
+- utter_bot_like_user
+- utter_user_like_bot
+- utter_bot_falling_love
+- utter_user_falling_love
+- utter_get_married
+- utter_miss_you
+- utter_personality
+- utter_angry
+- utter_hold_on
+- utter_boring
+- utter_happy
+- utter_iam_back
+- utter_hungry
+- utter_about_user
+- utter_just_kidding
+- utter_feeling_alone
+- utter_love_things
+- utter_feeling_sad
+- utter_commit_suicide
+- utter_user_likes
+- utter_test_you
+- utter_sleep
+- utter_motivational_quote
+- utter_bot_languages
+- utter_ask_time
+- utter_ask_weather
+- utter_handle_insult
+- utter_default
+- utter_goodafternoon
+forms: {}
+e2e_actions: []
